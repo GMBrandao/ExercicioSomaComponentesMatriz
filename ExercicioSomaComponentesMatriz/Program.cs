@@ -2,7 +2,6 @@
 int col, row, primDiag = 0, secDiag = 0;
 Random random = new Random();
 
-
 for (row = 0; row < 5; row++)
 {
     for (col = 0; col < 5; col++)
@@ -66,10 +65,3 @@ int sumLine(int row)
 
     return soma;
 }
-
-/*int RandomNumber()
-{
-    Random random = new Random();
-    int rnd = random.Next(100);
-    return rnd;
-}*/
