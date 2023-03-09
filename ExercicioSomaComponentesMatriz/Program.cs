@@ -10,11 +10,13 @@ for (row = 0; row < 5; row++)
     }
 }
 
+//Diagonal principal
 for (row = 0; row < 5; row++)
 {
     primDiag += matriz[row, row];
 }
 
+//Diagonal secundaria
 for (row = 0; row < 5; row++)
 {
     secDiag += matriz[row, 4 - row];
@@ -31,7 +33,9 @@ for (row = 0; row < 5; row++)
 
 Console.WriteLine("\nA soma da diagonal principal é: " + primDiag);
 Console.WriteLine("A soma da diagonal secundária é: " + secDiag);
+Console.WriteLine();
 sumLine();
+Console.WriteLine();
 sumCol();
 
 void sumCol()
