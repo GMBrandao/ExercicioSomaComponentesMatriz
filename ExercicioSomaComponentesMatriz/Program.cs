@@ -10,7 +10,7 @@ for (row = 0; row < 5; row++)
     }
 }
 
-for(row =  0; row < 5; row++)
+for (row = 0; row < 5; row++)
 {
     primDiag += matriz[row, row];
 }
@@ -42,11 +42,11 @@ Console.WriteLine("A soma da coluna 2 é: " + sumCol(2));
 Console.WriteLine("A soma da coluna 3 é: " + sumCol(3));
 Console.WriteLine("A soma da coluna 4 é: " + sumCol(4));
 
-
-int sumCol(int col){
+int sumCol(int col)
+{
     int soma = 0;
 
-    for(int i = 0; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
         soma += matriz[i, col];
     }
