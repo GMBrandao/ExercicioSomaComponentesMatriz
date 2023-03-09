@@ -31,37 +31,31 @@ for (row = 0; row < 5; row++)
 
 Console.WriteLine("\nA soma da diagonal principal é: " + primDiag);
 Console.WriteLine("A soma da diagonal secundária é: " + secDiag);
-Console.WriteLine("\nA soma da linha 0 é: " + sumLine(0));
-Console.WriteLine("A soma da linha 1 é: " + sumLine(1));
-Console.WriteLine("A soma da linha 2 é: " + sumLine(2));
-Console.WriteLine("A soma da linha 3 é: " + sumLine(3));
-Console.WriteLine("A soma da linha 4 é: " + sumLine(4));
-Console.WriteLine("\nA soma da coluna 0 é: " + sumCol(0));
-Console.WriteLine("A soma da coluna 1 é: " + sumCol(1));
-Console.WriteLine("A soma da coluna 2 é: " + sumCol(2));
-Console.WriteLine("A soma da coluna 3 é: " + sumCol(3));
-Console.WriteLine("A soma da coluna 4 é: " + sumCol(4));
+sumLine();
+sumCol();
 
-int sumCol(int col)
+void sumCol()
 {
-    int soma = 0;
-
-    for (int i = 0; i < 5; i++)
+    for (int column = 0; column < 5; column++)
     {
-        soma += matriz[i, col];
+        int soma = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            soma += matriz[i, column];
+        }
+        Console.WriteLine("A soma da coluna " + column + " é: " + soma);
     }
-
-    return soma;
 }
 
-int sumLine(int row)
+void sumLine()
 {
-    int soma = 0;
-
-    for (int i = 0; i < 5; i++)
+    for (int line = 0; line < 5; line++)
     {
-        soma += matriz[row, i];
+        int soma = 0;
+        for (int i = 0; i < 5; i++)
+        {
+            soma += matriz[line, i];
+        }
+        Console.WriteLine("A soma da linha " + line + " é: " + soma);
     }
-
-    return soma;
 }
